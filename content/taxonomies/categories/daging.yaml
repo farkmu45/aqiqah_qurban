@@ -1,0 +1,10 @@
+title: Daging
+code: |-
+  <i class="fas fa-hamburger fa-2x text-danger"></i>
+  <div class="ps-3">
+  	<h6 class="mt-n1 mb-0 text-map">Daging</h6>
+  </div>
+updated_by: a7098d2c-c4b1-4681-bfbc-3a7f4d2bd583
+updated_at: 1677910169
+blueprint: category
+icon: '<i class="fas fa-hamburger fa-2x text-danger"></i>'

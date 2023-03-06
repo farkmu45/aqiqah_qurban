@@ -1,0 +1,23 @@
+   <div class="container-xxl py-5 bg-dark hero-header mb-0">
+       <div class="container my-0 py-0">
+       </div>
+   </div>
+
+   <section class="gallery" id="gallery">
+       <div class="heading">
+           <span>OUR GALLERY</span>
+           <h3>MEAT STORE GALLERY</h3>
+       </div>
+
+       <div class="gallery-container">
+           {{ images }}
+               <a href="{{ image:0 }}" class="box" data-lightbox="mygallery">
+                   <img src="{{ glide :src="image:0" width="500" height="500" }}" alt="">
+                   <figcaption>{{ text }}</figcaption>
+                   <div class="icon">
+                       <i class="fas fa-plus"></i>
+                   </div>
+               </a>
+           {{ /images }}
+       </div>
+   </section>

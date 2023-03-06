@@ -1,0 +1,52 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-0">
+    <div class="container my-0 py-0">
+    </div>
+</div>
+<!--Service-->
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5 align-item-center">
+            <div class="col-lg-6">
+                <div class="row g-3">
+
+                    <div class="col-6 text-start">
+                        <img src="{{ glide :src="side_images:0" width="200" height="200" }}" data-wow-delay="0.5s" class="img-fluid rounded wow zoomIn">
+                        <img src="{{ glide :src="side_images:1" width="200" height="200" }}" data-wow-delay="0.5s" class="img-fluid rounded wow zoomIn" style="margin-top: 30%">
+                    </div>
+                    <div class="col-6 text-start">
+                        <img src="{{ glide :src="side_images:2" width="200" height="200" }}" data-wow-delay="0.5s" class="img-fluid rounded wow zoomIn">
+                        <img src="{{ glide :src="side_images:3" width="200" height="200" }}" data-wow-delay="0.5s" class="img-fluid rounded wow zoomIn" style="margin-top: 30%">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="section-title ff-secondary text-start text-about fw-normal"> Service</h4>
+                <p class="mb-2">Adapun Pembayarannya Bisa melalui Kartu Kredit, mbanking, dll.</p>
+                <a
+                    href="https://www.permatabank.com/id/kartu-kredit-retail/permatashopping-card?cid=awr_cc_o_sem_generic:awr:website:pscc:sem:pid:google:txt:o:glb:o&gclid=Cj0KCQiAtvSdBhD0ARIsAPf8oNkqbAZEFES8vB2qXks5oQWfvZZGL9vhhyDpS1al5btlcMR_g_1IpFUaArv6EALw_wcB"><img
+                        src="https://img2.pngdownload.id/20180702/vz/kisspng-computer-icons-credit-card-debit-card-credit-card-icon-5b3ad1aceae095.8998570615305814209621.jpg"
+                        width="40"></a>
+                <a href="https://www.bca.co.id/id/Individu/layanan/e-banking/BCA-Mobile"><img
+                        src="https://images.bisnis.com/posts/2022/03/03/1506589/bca-mobile.jpg" width="40"></a>
+                <a href="https://id.qr-code-generator.com/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png"
+                        width="30"></a>
+                <a href="https://gopay.co.id/"><img
+                        src="https://i.pinimg.com/originals/02/8b/92/028b92bb43a9f6c80e26c3ea403cb698.png"
+                        width="40"></a>
+
+                <p class="mb-5 py-3">{{ description }}</p>
+
+
+                <a href="{{ company:gmap_url }}">
+                    <h2><i class="fa fa-map-marker-alt me-2" style="font-size:36px;color:rgb(105, 6, 6)"></i><i
+                            class="text-map">{{ company:address }}</i></h2>
+                </a>
+                <p class="mb-0 py-5 text-map">{{ company:slogan }}</p>
+
+            </div>
+        </div>
+    </div>
+</div>

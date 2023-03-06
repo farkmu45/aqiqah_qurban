@@ -1,0 +1,55 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-0">
+    <div class="container my-0 py-0">
+    </div>
+</div>
+
+<div class="container-xxl py-4 bg-white hero-body mb-0" id="produk">
+    <div class="container-xxl py-5 mb-0">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h4 class="section-title ff-secondary text-center text-produk fw-normal">Produk Hewan Qurban
+                </h4>
+                <h1 class="mb-5 text-dark">Yang Paling Banyak Diminati</h1>
+            </div>
+
+            <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                    {{ taxonomy:categories }}
+                        <li class="nav-item">
+                            <a href="/products/categories/{{ slug }}" class="d-flex align-items-center text-start mx-3 ms-0 pb-3">
+                                {{ icon }}
+                                <div class="ps-3">
+                                    <h6 class="mt-n1 mb-0 text-map">{{ title }}</h6>
+                                </div>
+                            </a>
+                        </li>
+                    {{ /taxonomy:categories }}
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane fade show p-0 active" id="tab-1">
+                        <div class="row g-4">
+                            {{ collection:products }}
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img style="width: 80px;"
+                                            src="{{ glide :src="image" width="200" height="200" }}" alt=""
+                                            class="img-fluid flex-shrink-0 rounded">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span class="text-badan">{{ title }}</span>
+                                            </h5>
+                                            <small class="fst-italic text-isi">IDR {{ price }}</small>
+                                        </div>
+                                    </div>
+                                    <a href="{{ url }}" class="nav-item nav-link">Detail</a>
+                                </div>
+                            {{ /collection:products }}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

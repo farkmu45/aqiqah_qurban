@@ -1,0 +1,8 @@
+name: 'Admin Barokah'
+super: true
+id: a7098d2c-c4b1-4681-bfbc-3a7f4d2bd583
+password_hash: $2y$10$SMKbTlin/bxWdNiVoswGZeatKCpvVYYi.s4iNRyXLUeLRt/nH.wNu
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing

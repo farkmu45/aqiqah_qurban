@@ -1,0 +1,16 @@
+title: Products
+template: products/show
+layout: layout
+mount: 1287d880-5e36-48b2-92e9-98a50b622a74
+taxonomies:
+  - categories
+revisions: false
+route: '/{mount}/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'

@@ -1,0 +1,42 @@
+<div class="container-xxl py-5 bg-dark hero-header mb-0">
+    <div class="container my-0 py-0">
+    </div>
+</div>
+
+<div class="container-xxl py-5 mb-1" id="aboutus">
+    <div class="container">
+        <div class="row g-5 align-item-center">
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    {{ side_image }}
+                        <div class="col-6 text-end mb-5">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s"
+                                src="{{ glide :src="url" width="200" height="200" }}">
+                        </div>
+                    {{ /side_image }}
+
+                    <p class="mb-3">Salah satu faktor terpenting dalam ibadah kurban yakni dengan memberikan
+                        Qurban yang terbaik. Hewan Qurban haruslah dalam keadaan yang baik dan sehat.
+                    </p>
+                    <a href="{{ company:gmap_url }}">
+                        <h2><i class="fa fa-map-marker-alt me-2" style="font-size:36px;color:rgb(105, 6, 6)"></i><i
+                                class="text-map">{{ company:address }}</i></h2>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="section-title ff-secondary text-start text-about fw-normal"> About Us</h4>
+                <h1 class="mb-4 mt-4">{{ company:name }}</h1>
+                <p class="mb-5">{{ description }}</p>
+
+                {{ advantages }}
+                    {{ name }}
+                    <p class="mb-5">{{ definition }}
+                    </p>
+                {{ /advantages }}
+
+                <p class="mb-0 py-1 text-map">Perfect Moment, Get Best Service</p>
+            </div>
+        </div>
+    </div>
+</div>
